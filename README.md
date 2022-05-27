@@ -30,8 +30,8 @@ Your users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/advice-generator-i-used-html5-css-and-vanilla-js-RZYd4Col2a)
+-   Live Site URL: [Add live site URL here](https://jwords-advice-generator.netlify.app)
 
 ### Built with
 
