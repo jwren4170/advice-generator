@@ -1,10 +1,6 @@
 const adviceId = document.querySelector('.advice-id .id span');
 const advice = document.querySelector('.advice-text blockquote');
 
-/* set defaults for html so not starting with blanks */
-adviceId.innerHTML = 0;
-advice.innerHTML = 'Click the dice for good advice!';
-
 const URL = 'https://api.adviceslip.com/advice';
 
 const clickEvent = document.querySelector('.button');
@@ -20,7 +16,7 @@ clickEvent.addEventListener('click', (e) => {
 getRandomAdvice = async () => {
     try {
         const response = await fetch(URL);
-        if (response.ok && response.status === 200) {
+        if (response.ok) {
             const advice = response.json();
             return advice;
         } else {
@@ -30,3 +26,9 @@ getRandomAdvice = async () => {
         console.log(error);
     }
 };
+
+getRandomAdvice().then((res) => {
+    adviceId.innerHTML = res.slip.id;
+    advice.innerHTML = res.slip.advice;
+    console.log(res.slip);
+});
