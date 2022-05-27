@@ -26,7 +26,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./advice-generator/screenshot.png)
+![Screenshot](https://github.com/jwren4170/advice-generator/blob/master/Screenshot.png)
 
 ### Links
 
